@@ -12,9 +12,7 @@
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       color: white;
-      background: url('<blockquote class="imgur-embed-pub" lang="en" data-id="a/tC1xdH6"  ><a href="//imgur.com/a/tC1xdH6">Minecraft Grass</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>'); /* Minecraft grass texture */
-      background-size: 64px 64px;
-      background-attachment: fixed;
+      background-color: #111;
       overflow-x: hidden;
     }
     canvas#particles {
@@ -57,9 +55,25 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      background: rgba(0,0,0,0.5);
-      margin: 0;
     }
+
+    /* Minecraft-Themed Backgrounds */
+    .home {
+      background: linear-gradient(135deg, #2e7d32, #66bb6a); /* Overworld green */
+    }
+    .rules {
+      background: linear-gradient(135deg, #7b1c1c, #e53935); /* Nether red */
+    }
+    .join {
+      background: linear-gradient(135deg, #4a148c, #7e57c2); /* End purple */
+    }
+    .players {
+      background: linear-gradient(135deg, #0d47a1, #64b5f6); /* Lapis blue */
+    }
+    .vote {
+      background: linear-gradient(135deg, #f9a825, #ffca28); /* Gold/Nether fortress feel */
+    }
+
     h1 {
       font-size: 3rem;
       margin-bottom: 20px;
@@ -83,11 +97,6 @@
       background: white;
       color: black;
     }
-    .home { background: rgba(0, 0, 0, 0.6); }
-    .rules { background: rgba(10, 0, 0, 0.6); }
-    .join { background: rgba(0, 10, 0, 0.6); }
-    .players { background: rgba(10, 10, 0, 0.6); }
-    .vote { background: rgba(0, 0, 10, 0.6); }
 
     iframe {
       border: none;
@@ -154,9 +163,8 @@
       <button class="scroll-btn">Vote on Site</button>
     </a>
     <a href="https://discord.gg/BrhGNyksAN" target="_blank">
-  <button class="scroll-btn">Join Discord</button>
-</a>
-
+      <button class="scroll-btn">Join Discord</button>
+    </a>
   </section>
 
   <!-- Auto-Refresh Player Count Script -->
