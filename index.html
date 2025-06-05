@@ -56,32 +56,14 @@
       align-items: center;
       text-align: center;
     }
+    .home { background: linear-gradient(135deg, #2e7d32, #66bb6a); }
+    .rules { background: linear-gradient(135deg, #7b1c1c, #e53935); }
+    .join { background: linear-gradient(135deg, #4a148c, #7e57c2); }
+    .players { background: linear-gradient(135deg, #0d47a1, #64b5f6); }
+    .vote { background: linear-gradient(135deg, #f9a825, #ffca28); }
 
-    /* Minecraft-Themed Backgrounds */
-    .home {
-      background: linear-gradient(135deg, #2e7d32, #66bb6a); /* Overworld green */
-    }
-    .rules {
-      background: linear-gradient(135deg, #7b1c1c, #e53935); /* Nether red */
-    }
-    .join {
-      background: linear-gradient(135deg, #4a148c, #7e57c2); /* End purple */
-    }
-    .players {
-      background: linear-gradient(135deg, #0d47a1, #64b5f6); /* Lapis blue */
-    }
-    .vote {
-      background: linear-gradient(135deg, #f9a825, #ffca28); /* Gold/Nether fortress feel */
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
-    p {
-      max-width: 700px;
-      font-size: 1.2rem;
-    }
+    h1 { font-size: 3rem; margin-bottom: 20px; }
+    p { max-width: 700px; font-size: 1.2rem; }
     .scroll-btn {
       margin-top: 20px;
       padding: 10px 20px;
@@ -157,17 +139,26 @@
     <h1>Vote for Rewards!</h1>
     <p>
       ✦ Voting helps the server grow and you get rewards!<br>
-      ✦ Click the button below to vote now.
+      ✦ Click the buttons below to vote now.
     </p>
     <a href="https://minecraftservers.org/vote/surfmc" target="_blank">
-      <button class="scroll-btn">Vote on Site</button>
+      <button class="scroll-btn">Vote on MinecraftServers.org</button>
+    </a>
+    <a href="https://minecraft-serverlist.com/server/2812/vote" target="_blank">
+      <button class="scroll-btn">Vote on ServerList.com</button>
+    </a>
+    <a href="https://minecraftservers.org/server/674859/vote" target="_blank">
+      <button class="scroll-btn">Vote on Org Server #2</button>
+    </a>
+    <a href="https://servers-minecraft.net/server-surf-network.41598/vote" target="_blank">
+      <button class="scroll-btn">Vote on Servers-Minecraft.net</button>
     </a>
     <a href="https://discord.gg/BrhGNyksAN" target="_blank">
       <button class="scroll-btn">Join Discord</button>
     </a>
   </section>
 
-  <!-- Auto-Refresh Player Count Script -->
+  <!-- Player Count Script -->
   <script>
     const playerCount = document.getElementById("playerCount");
     const serverIP = "surfNetwork-4S08.aternos.me";
@@ -190,10 +181,10 @@
     }
 
     updatePlayerCount();
-    setInterval(updatePlayerCount, 30000); // Refresh every 30 sec
+    setInterval(updatePlayerCount, 30000);
   </script>
 
-  <!-- Particle Background -->
+  <!-- Particles Background -->
   <script>
     const canvas = document.getElementById('particles');
     const ctx = canvas.getContext('2d');
